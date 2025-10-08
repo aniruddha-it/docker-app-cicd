@@ -18,10 +18,15 @@ Configurable Jenkinsfile for CI/CD
 Modular, easy-to-extend structure
 
 🏗️ Tech Stack
+
 Component	Technology
+
 Backend	Django (Python)
+
 CI/CD	Jenkins
+
 Containerization	Docker
+
 SCM	Git & GitHub
 
 🐳 Docker Setup
