@@ -1,65 +1,61 @@
-📝 Django Todo App – CI/CD with Jenkins & Docker
+## 📝 Django Todo App – CI/CD with Jenkins & Docker
 
-📖 Overview
+### 📖 Overview
 
 This project is a Dockerized Django Todo Application automated using a Jenkins CI/CD pipeline.
 The pipeline clones the GitHub repository, builds a Docker image, and runs the container — ensuring a clean, repeatable deployment process.
 
-🚀 Features
+### 🚀 Features
 
-Django-based Todo web application
+- Django-based Todo web application
+- Containerized using Docker
+- Automated build and deploy with Jenkins
+- Configurable Jenkinsfile for CI/CD
+- Modular, easy-to-extend structure
 
-Containerized using Docker
+### 🏗️ Tech Stack
 
-Automated build and deploy with Jenkins
+1. Django (Python)
+2. Jenkins
+3. Docker
+4. Git & GitHub
 
-Configurable Jenkinsfile for CI/CD
+### 🐳 Docker Setup
 
-Modular, easy-to-extend structure
-
-🏗️ Tech Stack
-
-Component	Technology
-
-Backend	Django (Python)
-
-CI/CD	Jenkins
-
-Containerization	Docker
-
-SCM	Git & GitHub
-
-🐳 Docker Setup
-
+```bash
 Build the Docker image:
+```
 
+```bash
 docker build -t django-todo:01 .
+```
 
 Run the container:
 
+```bash
 docker run -d -p 8001:8001 django-todo:01
+```
 
-Then open your browser at http://localhost:8001
+Then open your browser at [http://localhost:8001](http://localhost:8001/)
 .
 
-⚡ Jenkins CI/CD Pipeline
+### ⚡ Jenkins CI/CD Pipeline
 
 Stages in Jenkinsfile:
 
-Checkout – Pulls the latest code from GitHub.
-
-Build Docker Image – Builds the Docker image for the Django app.
-
-Run Container – Runs the Docker container automatically after build.
+1. Checkout – Pulls the latest code from GitHub.
+2. Build Docker Image – Builds the Docker image for the Django app.
+3. Run Container – Runs the Docker container automatically after build.
+4. User Input - To stop and remove conatiner and image
 
 The Jenkins pipeline automatically executes each stage on new commits or manual build triggers.
 
-📦 Requirements
+### 📦 Requirements
 
-Python latest
+-  Python latest
 
-Docker installed and running
+- Docker installed and running
 
-Jenkins configured with Docker permissions
+- Jenkins configured with Docker permissions
 
-Git installed
+- Git installed
