@@ -33,7 +33,7 @@ pipeline {
                 sh '''
                 docker stop django-todo || true
                 docker rm django-todo || true
-                docker rmi django-todo
+                docker rmi django-todo:01
                 '''
             }
         }
